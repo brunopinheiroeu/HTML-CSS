@@ -2,6 +2,7 @@
   /* universal selector */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -9,7 +10,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -17,19 +18,17 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  /* height: 80px; */
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  border-top: 10px solid #1098ad;
 }
 
 article {
   margin-bottom: 60px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
 }
 
 h1,
@@ -51,13 +50,15 @@ h2 {
   position: relative;
 }
 h2::after {
-  content: "🌟";
-  font-size: 24px;
+  content: "TOP";
+  background-color: rgb(255, 208, 0);
+  font-size: 14px;
+  color: #444;
   font-weight: bold;
-  padding: 5px;
+  padding: 5px 10px;
   position: absolute;
-  right: -5px;
-  top: -5px;
+  right: -20px;
+  top: -10px;
 }
 h3 {
   font-size: 30px;
@@ -65,9 +66,9 @@ h3 {
 }
 h4 {
   font-size: 20px;
-
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 15px;
 }
 p {
   font-size: 22px;
@@ -86,15 +87,22 @@ li {
 li:last-child {
   margin-bottom: 0;
 }
+/* EXTRA STYLES */
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(odd) {
+  color: rgb(24, 47, 78);
+} */
 
 nav {
   font-size: 18px;
   text-align: center;
 }
 nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  display: block; */
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
@@ -116,6 +124,7 @@ nav a:link:last-child {
 }
 .related_posts {
   list-style: none;
+  margin: 0;
 }
 .related_author {
   font-weight: bold;
@@ -131,16 +140,6 @@ nav a:link:last-child {
   position: fixed;
   bottom: 10px;
   right: 10px;
-}
-
-li:first-child {
-  font-weight: bold;
-}
-li:last-child {
-  font-style: italic;
-}
-li:nth-child(odd) {
-  color: rgb(24, 47, 78);
 }
 
 /* Styling links */
@@ -163,7 +162,8 @@ a:active {
   width: 100%;
   /* height: auto; */
 }
-/* Floats */
+
+/* FLOATS */
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -176,9 +176,32 @@ a:active {
 h1 {
   float: left;
 }
+h1::after {
+  content: "[float]";
+}
 nav {
   float: right;
 }
 .clear {
+  clear: both;
+}
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+.related_posts {
+  float: left;
+}
+.rel-image {
+  float: left;
+}
+.related_author {
+  clear: both;
+}
+footer {
   clear: both;
 }
