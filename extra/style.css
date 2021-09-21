@@ -71,8 +71,8 @@ p {
 .c6 {
   width: 20px;
   height: 20px;
-  display: inline-block;
-  margin: 0 5px;
+  /* sdisplay: inline-block; */
+  /* margin: 0 5px; */
 }
 .c1 {
   background-color: black;
@@ -117,8 +117,28 @@ li {
   color: black;
 }
 
+/* FLEXBOX */
+.box {
+  display: flex;
+  gap: 40px;
+}
+.comp-info {
+  flex: 0 0 240px;
+  margin-top: 20px;
+}
+.comp-details {
+  margin: 20px 20px 0 0;
+}
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+.colours {
+  display: flex;
+  gap: 10px;
+}
 /* FLOAT */
-
+/* 
 .comp-img {
   width: 275px;
   padding-right: 20px;
@@ -143,4 +163,4 @@ li {
   float: right;
   width: 260px;
   padding: 30px 20px;
-}
+} */
