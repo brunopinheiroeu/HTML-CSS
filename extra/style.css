@@ -116,9 +116,29 @@ li {
   background-color: #fff;
   color: black;
 }
+/* GRID */
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.comp-info,
+.comp-details {
+  margin-top: 20px;
+}
+.price-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.colours {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 10px; */
+  /* justify-items: center; */
+}
 
 /* FLEXBOX */
-.box {
+/* .box {
   display: flex;
   gap: 40px;
 }
@@ -136,7 +156,7 @@ li {
 .colours {
   display: flex;
   gap: 10px;
-}
+} */
 /* FLOAT */
 /* 
 .comp-img {

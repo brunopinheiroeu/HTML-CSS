@@ -14,7 +14,6 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -40,19 +39,74 @@
         margin: 40px;
 
         /* CSS GRID */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: 200px 150px; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+
+        /* gap: 20px; */
+        column-gap: 20px;
+        row-gap: 40px;
+
+        /* TEMP */
+        display: none;
       }
+      /* For .container--1 */
+
+      /* .el--1 {
+        grid-column: 1/-1;
+        grid-row: 1;
+      }
+      .el--2 {
+        grid-column: 1/4;
+        height: 150px;
+      }
+
+      .el--3 {
+        grid-row: 3/5;
+      }
+
+      .el--5 {
+        grid-column: 4;
+        grid-row: 2/5;
+      }
+      .el--7 {
+        grid-column: 2/4;
+      }
+      .el--8 {
+        grid-column: 1/-1;
+        grid-row: 5;
+      } */
 
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
-
-        width: 1000px;
+        margin: 40px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning tracks inside container */
+        justify-content: start;
+        align-content: start;
+
+        justify-items: center;
+        align-items: center;
+      }
+
+      /* For .container--2 */
+      .el--3 {
+        height: 150px;
+        align-self: end;
       }
     </style>
   </head>
