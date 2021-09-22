@@ -127,14 +127,12 @@ li {
   margin-top: 20px;
 }
 .price-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 .colours {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  /* gap: 10px; */
-  /* justify-items: center; */
+  display: flex;
+  gap: 10px;
 }
 
 /* FLEXBOX */
@@ -149,14 +147,9 @@ li {
 .comp-details {
   margin: 20px 20px 0 0;
 }
-.price-box {
-  display: flex;
-  justify-content: space-between;
+
 }
-.colours {
-  display: flex;
-  gap: 10px;
-} */
+ */
 /* FLOAT */
 /* 
 .comp-img {
